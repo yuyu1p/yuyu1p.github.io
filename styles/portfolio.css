@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url(../img/dead-leaf.jpg);
+  background-image: url(/images/dead-leaf.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
