@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.min.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <title>My Portfolio</title>
+  <script type="text/javascript">
+    function showBalloon() {
+      var wObjballoon = document.getElementById("makeImg");
+      if (wObjballoon.className == "balloon1") {
+        wObjballoon.className = "balloon";
+      } else {
+        wObjballoon.className = "balloon1";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="site-header">
+    <!-- wrapperを共通で使用する、横のサイズだけ(width:100%; padding: 0 15px; margin: 0 auto;)設定 -->
+    <div class="wrapper site-header__wrapper">
+      <div class="site-header__start">
+        <img class="logo" src="./img/logo-leaf.png">
+      </div>
+      <div class="nav-1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+  <!-- Second Header Start -->
+  <div class="second-header">
+    <div class="wrapper second-header__wrapper">
+      <div class="nav-2">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- Second Hader End -->
+  <!-- Top Start -->
+  <div class="top-wrapper">
+    <div class="wrapper">
+      <h1>My Test Web Page</h1>
+      <h1>ポートフォリオ用テストサイト</h1>
+      <p>製作期間：1.5日(2021/10/26~2021/10/27)</p>
+      <p>レスポンシブデザインで実装しています</p>
+      <p>紅葉の秋ということで<span>ハイキング</span>や<span>ピクニック</span>をテーマにデザインしました</p>
+      <div class="btn-wrapper">
+        <a href="https://github.com/yuyu1p/hello" class="btn github" target="_blank"><i
+            class="fab fa-git-square fa-spin"></i>GitHub</a>
+        <a href="https://atcoder.jp/users/musutafa" class="btn atcoder" target="_blank"><i
+            class="fas fa-keyboard fa-spin"></i>AtCoder</a>
+      </div>
+    </div>
+  </div>
+  <!-- Top End -->
+  <!-- Lesson Start -->
+  <div class="lesson-wrapper">
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Skill</h1>
+      </div>
+      <div class="lessons">
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="img/html5-css3-js.png">
+            <p>HTML5 & CSS3 & JavaScript</p>
+          </div>
+          <p class="text-contents">ウェブサイトだけでなくアプリの外観を作る言語です。まだまだ半人前ですがUI/UXデザイン思想を掘り下げていきたいと考えております。</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="img/python-logo.png">
+            <p>Python</p>
+          </div>
+          <p class="text-contents">
+            人工知能や機械学習分野ではかかせない言語です。Python歴は4年ほどで自分にとってもっとも馴染みの深い言語です。計算幾何学やデータ処理に特化するならば、これほど簡易な言語はないかと思われます</p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="img/wordpress-logo.png">
+            <p>WordPress</p>
+          </div>
+          <p class="text-contents">
+            このページの作成で実感しましたが、サイトの作成はほんとうに大変でした。めんどうなサイト作成を簡略化できるWPの偉大さは言うまでもありません。ウェブサイト、とりわけトップページはお客様との重要な接点なので、ユーザー体験に配慮されたデザイン性に追求と、その問題に集中するためのロジックの簡略化ツールは必須なのかもしれません
+          </p>
+        </div>
+        <div class="lesson">
+          <div class="lesson-icon">
+            <img src="img/algorithm-logo.png">
+            <p>Algorithm</p>
+          </div>
+          <p class="text-contents">
+            もっとも自分が力をいれているのがこのアルゴリズムです。たんに実務を学ぶだけでは必要ないと言う方もおりますが、アルゴリズムの問題を解くなかで、数学や論理的思考の基盤をつくりあげてくれるアルゴリズムはエンジニアに欠かせないものだと思います。また実際に実務ではOR(Operations
+            Research)分野で使われています</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Lesson End -->
+  <!-- Message Start -->
+  <div class="message-wrapper">
+    <div class="wrapper">
+      <div class="heading">
+        <h2>見ていただきありがとうございました</h2>
+        <h3>作成するなかで、さまざまなサイトさまの資料を参考にしました！ありがとうございます！</h3>
+        <h3>参考資料のURLを載せておきます　下の「Special Thanks」ボタンをどぞ</h3>
+      </div>
+      <div class="balloonoya" onclick="showBalloon()">
+        <span class="btn message">Special Thanks</span>
+        <span class="balloon1" id="makeImg">
+          <ul>
+            <li><a
+                href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                target="_blank">1.フレックスボックスの基本概念</a></li>
+            <li><a href="https://webparts.cman.jp/balloon/click/" target="_blank">2.吹き出しのデザイン</a></li>
+            <li><a href="https://wk-partners.co.jp/homepage/blog/hpseisaku/htmlcss/huchidorimoji/"
+                target="_blank">3.縁取り</a></li>
+            <li><a href="http://www.netyasun.com/home/color.html" target="_blank">4.カラーコード一覧表</a></li>
+            <li><a href="https://hogehoge.tk/tool/number.html" target="_blank">5.16進数相互変換ツール</a></li>
+            <li><a href="https://jp.onlinelogomaker.com/" target="_blank">6.ロゴメーカー</a></li>
+            <li><a href="https://www.cleanpng.com/" target="_blank">7.CLEANPNG</a></li>
+            <li><a href="https://qiita.com/ryounagaoka/items/045b2808a5ed43f96607"
+                target="_blank">8.もう逃げない。HTMLのviewportをちゃんと理解する</a></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Message Start -->
+  <!-- Footer Start -->
+  <footer>
+    <div class="wrapper">
+      <img src="img/logo.png">
+      <p>Survive. Then it ’s profitable</p>
+    </div>
+    <div class="copy-wrapper">
+      <small>&copy;onlinelogomaker.com/logomaker/?project=13401720</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
