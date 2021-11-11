@@ -255,13 +255,7 @@ a {
 }
 
 .lesson-icon > img{
-  max-width: 100%;
-}
-
-@media all and (max-width: 669px) {
-  .lesson-icon > img {
-    max-width: 80%;
-  }
+  max-width: 85%;
 }
 
 .lesson-icon > p {
@@ -288,10 +282,16 @@ a {
 }
 
 .text-contents {
-  width: 80%;
+  width: 85%;
   font-size: 13px;
   display: inline-block;
   margin-top: 15px;
+}
+
+@media all and (max-width: 669px) {
+    .text-contents {
+        text-align: left;
+    }
 }
 
 .heading > h3 {
