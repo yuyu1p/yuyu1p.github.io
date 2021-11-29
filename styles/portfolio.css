@@ -286,6 +286,7 @@ a {
   font-size: 13px;
   display: inline-block;
   margin-top: 15px;
+  line-height: 16px;
 }
 
 @media all and (max-width: 669px) {
